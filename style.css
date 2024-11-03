@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0; /*Adiciona espaço entre o elemento e seus elemento vizinhos*/
+    padding: 0; /*Adiciona espaço dentro do elemento, deixando o conteúdo "AFASTADO" da borda*/
+    box-sizing: border-box; /*Largura e a altura*/
+    font-family: "Poppins", sans-serif; /*Seleciona a fonte Poppins do import da linha 1 deste código*/
+}
+
+body{
+    display: flex;
+    justify-content: center; /*Alinha os elementos ao centro*/
+    align-items: center; /*Acompanhado do min-height, faz com que os elementos centralizem ao meio da página*/
+    min-height: 100vh; /*Complemento do align-items*/
+    background: url('./img/img.jpg'); /*Adiciona uma imagem de fundo na página*/
+    background-size: cover; /*Para sempre estucar a imagem na página toda*/
+    background-position: center;
+
+}
+
+.conteiner{
+    width: 420px; /*Limita o tamanho do elemento */
+    background-color: transparent; /*Define a cor de fundo do elemento*/
+    border: 2px solid  rgba(255, 255, 255, .2); /*Adiciona Boradas no fundo do elemento e cor das bordas*/
+    border-radius: 10px; /* Adiciona bordas arredondadas*/
+    color: #fff; /*Adiciona cor nos textos dentro deste conteiner*/
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /*Sombra por trás do background do login*/
+    backdrop-filter: blur(50px); /*Usado para deixar o fundo fosco*/
+
+}
+
+.conteiner h1{
+    font-size: 36px; /*Tamanho da fonte*/
+    text-align: center; /*Alinha o texto ao centro*/
+
+}
+
+.input-box{
+    position: relative;
+    width: 100%; /*Para ocupar o máximo de espaço além do padding*/
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{   /*Vai estilizar o input que está dentro desta classe*/
+    width: 100%; /*Vai ocupar todo espaço disponível*/
+    height: 100%; /*Vai ocupar todo espaço disponível*/
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2); /*Define as bordas*/
+    border-radius: 40px;
+    outline: none; /*Tirar linha azul ao clicar na caixa de digitar*/
+    font-size: 16px; 
+    color: #fff;
+    padding: 20px 45px 20px 20px; /*O padding funciona: 1-em cima, 2-direita, 3- em baixo e 4- na esquerda*/
+
+}
+
+
+.input-box input ::placeholder{ /*Define detalhes do texto dentro da caixa de preenchimento no html */
+    color: #949b9b;
+}
+
+.input-box i{  /*Define detalhes dos ícones*/
+    position: absolute; /*Para posicionar em um ponto específico*/
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+/*
+Margin & Padding
+
+1 valor- margin: 20px - Todos os lados
+2 valores - margin: 20px 30px - Em cima e embaixo
+3 valores - padding: 20px 10px 30px - Em cima, dos lados e embaixo
+4 valores - margin: 10px 30px 12px 33px - em cima, direita, embaixo e esquerda 
+*/
+
+.remember-forgot label input{
+    accent-color: white; /*Define a cor de fundo da caixa de seleção do lembrar de mim*/
+    margin-right: 5px;
+     
+
+}
+
+.remember-forgot a{
+    text-align: none; /*Para tirar o underline*/
+    color: white;
+
+}
+
+.remember-forgot a :hover{ /*Para que quando passar o mouse aparecer o underline em baixo da palavra*/
+    text-decoration: underline;
+
+}
+
+.login{
+    width: 100%; /*Para ocupar todo espaço do conteiner*/
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; /*Para ficar a mãozinha ao passar o muse no botão*/
+    font-size: 16px;
+    color: #333;
+    font-weight: 600; /*Para o texto ficar um pouco maior*/
+    box-shadow: rgba(0, 0, 0, .1);
+    margin-top: 20px; /*descer um pouco o botão de login*/
+    
+}
+
+.login:hover { /*Quando passar o mouse em cima mudar cor do background color */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    transition: 0.5s; /*Para deixar mais lento a transição */
+
+
+}
+
+.register-link{
+    font-size: 14px;
+    text-align: center;
+    margin:20px 0 15px;
+    
+}
+
+.register-link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-link a :hover{
+    text-decoration: underline;
+
+}
